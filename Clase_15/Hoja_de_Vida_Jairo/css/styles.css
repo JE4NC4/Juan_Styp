@@ -1,0 +1,51 @@
+:root{
+    --color-principal: rgb(7,34,39);
+    --color-secundario: rgb(53,133,139);
+    --color-terciario: rgb(79,189,186);
+    --color-cuarto: rgb(174,254,255);
+    --color-quinto: rgb(244, 255, 255);
+    --color-quinto-hover: rgb(197, 207, 207);
+    --fuente-principal: 'Mochiy Pop P One', sans-serif;
+    --fuente-secundaria: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-principal);
+    font-family: var(--fuente-principal);
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 6vh;
+}
+
+.nav{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    right: 1rem;
+}
+
+.nav__li{
+    margin: 0 1rem;
+    display: inline-block;
+    list-style: none;
+}
+
+.nav__link{
+    color: var(--color-quinto) ;
+    text-decoration: none;
+}
+
+.nav__link:hover{
+    color: var(--color-quinto-hover);
+    transition: .5s;
+}

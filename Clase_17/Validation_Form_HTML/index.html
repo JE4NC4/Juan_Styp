@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Validacion Form</title>
+</head>
+<body>
+    <form action="val" class="form">
+        <div class="form__c">
+            <h1 class="form__title"> Validar Html </h1>
+        </div>
+        <label for="nombre" class="label"> Nombre </label>
+        <input type="text"  id="nombre" class="input" placeholder="Ingresa tu nombre" required minlength="10" maxlength="200">
+        <label for="correo" class="label"> Correo </label>
+        <input type="text" id="correo" class="input" placeholder="Ingresa tu correo" required minlength="10" maxlength="500">
+        <label for="contraseña" class="label"> Contraseña </label>
+        <input type="password" id="contraseña" class="input" placeholder="Ingresa tu contraseña" required>
+        <div class="checkbox">
+            <label for="" class="label"> Genero </label>
+            <label for="h" class="label__check">Hombre</label>
+            <input type="radio" name="genero" id="h" value="h" class="input__check" required>
+            <label for="m" class="label__check">Mujer</label>
+            <input type="radio" name="genero" id="m" value="m" class="input__check" required>
+            <label for="o" class="label__check">Otro</label>
+            <input type="radio" name="genero" id="o" value="o" class="input__check" required>
+        </div>
+        <div class="button__cont">
+            <button class="button">ENVIAR</button>
+        </div>
+    </form>
+    <script src="js/index.js"></script>
+</body>
+</html>
