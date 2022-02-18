@@ -8,24 +8,40 @@
     <title>Validacion Form</title>
 </head>
 <body>
-    <form action="val" class="form">
+    <form action="val" class="form" >
         <div class="form__c">
             <h1 class="form__title"> Validar Html </h1>
         </div>
-        <label for="nombre" class="label"> Nombre </label>
-        <input type="text"  id="nombre" class="input" placeholder="Ingresa tu nombre" required>
-        <label for="correo" class="label"> Correo </label>
-        <input type="text" id="correo" class="input" placeholder="Ingresa tu correo" required>
-        <label for="contraseña" class="label"> Contraseña </label>
-        <input type="password" id="contraseña" class="input" placeholder="Ingresa tu contraseña" required>
+        <label for="nombre" class="label">
+            Nombre
+            <input type="text"  id="nombre" class="input" placeholder="Ingresa tu nombre" required>
+
+        </label>
+        <label for="mail" class="label">
+            Correo
+            <input type="email" id="mail" class="input" placeholder="Ingresa tu correo" required >
+            <span class="error" aria-live="polite"></span>
+        </label>
+        <label for="contraseña" class="label">
+            Contraseña
+            <input type="password" id="contraseña" class="input" placeholder="Ingresa tu contraseña" required>
+
+        </label>
         <div class="checkbox">
             <label for="" class="label"> Genero </label>
-            <label for="h" class="label__check">Hombre</label>
-            <input type="radio" name="genero" id="h" value="h" class="input__check">
-            <label for="m" class="label__check">Mujer</label>
-            <input type="radio" name="genero" id="m" value="m" class="input__check">
-            <label for="o" class="label__check">Otro</label>
-            <input type="radio" name="genero" id="o" value="o" class="input__check">
+            <label for="h" class="label__check">
+                Hombre
+                <input type="radio" name="genero" id="h" value="h" class="input__check" required>
+            </label>
+            <label for="m" class="label__check">
+                Mujer
+                <input type="radio" name="genero" id="m" value="m" class="input__check" required>
+            </label>
+            <label for="o" class="label__check">
+                Otro
+                <input type="radio" name="genero" id="o" value="o" class="input__check" required>
+            </label>
+
         </div>
         <div class="button__cont">
             <button class="button">ENVIAR</button>
@@ -34,3 +50,6 @@
     <script src="js/index.js"></script>
 </body>
 </html>
+
+
+<!-- JAIRO STYP RODRIGUEZ PATIÑO  & JUAN CAMILO ROJAS ROJAS -->
