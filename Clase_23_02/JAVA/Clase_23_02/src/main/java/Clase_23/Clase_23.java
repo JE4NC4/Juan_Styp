@@ -1,9 +1,9 @@
+import java.util.Scanner;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package Clase_23;
-
 /**
  *
  * @author Ambiente
@@ -17,7 +17,7 @@ public class Clase_23 {
         // TODO code application logic here
         
         Scanner datos;
-        datos = new Scanner(system.in);
+        datos = new Scanner(System.in);
         
         int cantidad = datos.nextInt();
         float notas[][] = new float [cantidad][4];
@@ -35,7 +35,7 @@ public class Clase_23 {
                 }
             }
         }
-        promedio = suma/cantida;
+        promedio = suma/cantidad;
         
         int mayor=0;
         int regular = 0;
@@ -79,8 +79,40 @@ public class Clase_23 {
         float mejor=0;
         float estudiante= 0;
         for(int i = 0; i<notas.length; i++){
-            if((notas[i][2] == 1.0) && (notas[i][3]>mejor))
+            if((notas[i][2] == 1.0) && (notas[i][3]>mejor)){
+                mejor = notas[i][3];
+                estudiante = notas[i][0];
+            }
         }
+        if(estudiante == 1.0){
+            System.out.println("armando");
+        }
+        else{
+            if(estudiante == 2.0){
+                System.out.println("nicolas");
+            }
+            else{
+                if(estudiante == 3.0){
+                    System.out.println("daniel");
+                }
+                else{
+                    if(estudiante == 4.0){
+                    System.out.println("maria");
+                    }
+                    else{
+                        if(estudiante == 5.0){
+                            System.out.println("marcela");
+                        }
+                        else{
+                            System.out.println("alexandra");
+                        }
+                    }
+                }
+            }
+        }
+        
+        datos.close();
+        
     }
     
 }
