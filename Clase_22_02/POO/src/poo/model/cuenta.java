@@ -37,4 +37,8 @@ public class cuenta{
         return "cuenta{titular="+this.titular + ", cantidad=" + id_est + ", nombre=" + nombre +", genero="+ this.genero+", materia=" + materia + ", nmb_materia=" + nmb_materia + ", nota=" + nota + '}';
     }
     
+    public string ingresar (){
+        
+    }
+    
 }
