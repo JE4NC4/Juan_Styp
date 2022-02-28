@@ -1,4 +1,5 @@
 package Clase_23;
+
 import java.util.Scanner;
 
 /*
@@ -9,12 +10,6 @@ import java.util.Scanner;
  *
  * @author Ambiente
  */
-
-
-
-
-
-
 public class Clase_23 {
 
     /**
