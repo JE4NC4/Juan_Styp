@@ -3,6 +3,7 @@ public class persona {
 	
 	private String nombre = (String) "";
 	private int edad = (int) 0;
+	private int dni = ((int) (Math.random()*(99999999-10000000)) + 10000000);
 	private String sexo = (String) "h";
 	private float peso = (float) 0.0;
 	private float altura = (float) 0.0;
@@ -55,7 +56,7 @@ public class persona {
 		}
 		return mayMen;
 	}
-
+	
 	
 	public void comprobarSexo (String sexo) {
 		this.sexo = sexo;
@@ -80,16 +81,16 @@ public class persona {
 				
 				break;
 		}
-	}
+	};
 	
-	public void randomDni() {
-		int value = (int) (Math.random()*(99999999 -10000000)) + 10000000;
-		//this.dni = String.valueOf(value);;
-	}
+//		int value = (int) (Math.random()*(99999999 -10000000)) + 10000000;
+//		dni = ((int) (Math.random()*(99999999-10000000)) + 10000000);
+	
+	
 
 	@Override
 	public String toString() {
-		return "Nombre: " + this.nombre +", Edad: " + this.edad +", Sexo: " + this.sexo+ ", Peso: " + this.peso+ ",Altura: " + this.altura+ " ";
+		return "Nombre: " + this.nombre +", Edad: " + this.edad + ", DNI: " + dni + ", Sexo: " + this.sexo+ ", Peso: " + this.peso+ ", Altura: " + this.altura+ " ";
 	}
 	
 //	public String getNombre() {
